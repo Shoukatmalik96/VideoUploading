@@ -71,7 +71,8 @@ namespace VideoUploadingTest
 			video.Snippet.CategoryId = "22"; // See https://developers.google.com/youtube/v3/docs/videoCategories/list
 			video.Status = new VideoStatus();
 			video.Status.PrivacyStatus = "unlisted"; // or "private" or "public"
-			var filePath = @"C:\Users\DANAT-ARGAAM-DEV\Videos\y2mate.com - 1min_video_QUk3MNo1Exs_1080p.mp4"; // Replace with path to actual movie file.
+			// Replace with path to actual movie file.
+			var filePath = @"D:\TestVideos\5sec.mp4";
 
 			using (var fileStream = new FileStream(filePath, FileMode.Open))
 			{
